@@ -1,3 +1,12 @@
+#featured-screenshot {
+  width: 70%;
+  height: 70%;
+}
+
+.screenshot {
+  width: 100%;
+}
+
 #left-subhead-line {
   float: left;
   width: 100px;
@@ -25,6 +34,10 @@
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 0.5s;
   color: #6FBEF3;
+}
+
+.blue-background {
+  background-color: #6FBEF3;
 }
 
 /*#comic-name {
@@ -56,6 +69,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
+    background-color: #BF3C31;
 }
 
 h1,
@@ -189,7 +203,7 @@ a.social-buttons:hover {
  */
 
 .splash-container {
-    background: black;
+    background: #BF3C31;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -238,11 +252,11 @@ a.social-buttons:hover {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
     top: 87%;
-    width: 100%;
+    width: 90%;
     min-height: 12%;
     z-index: 2;
     background: white;
-
+    margin-left: 5vw;
 }
 
 /* This is the class used for the main content headers (<h2>) */
