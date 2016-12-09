@@ -1,10 +1,84 @@
+#headshot {
+  border-radius: 50%;
+  width: 10vw;
+  margin-right: 1.5vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#featured {
+  position: relative;
+}
+
 #featured-screenshot {
-  width: 70%;
-  height: 70%;
+  width: 61.5%;
+  height: 22%;
+  position: absolute;
+  z-index: 2;
+  left: 10.4vw;
+  top: 31.5vh;
+}
+
+#macbook {
+  /*z-index: 1;*/
+  /*position: absolute;*/
+  width: 90%;
+  height: 49vh;
+}
+
+.glow {
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+.description {
+  width: 60%;
+}
+
+.section-icon {
+  margin-bottom: 3vh;
+  font-size: 2em;
 }
 
 .screenshot {
   width: 100%;
+  margin-top: 6vh;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+.text-right
+{
+    text-align: right !important;
+}
+
+.text-center
+{
+    text-align: center !important;
+}
+
+.text-left
+{
+    text-align: left !important;
+}
+
+textarea {
+    resize: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #left-subhead-line {
@@ -69,7 +143,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
-    background-color: #BF3C31;
+    background-color: black;
 }
 
 h1,
@@ -80,6 +154,11 @@ h5,
 h6,
 label {
     color: #34495e;
+}
+
+p, ul {
+font-weight: lighter;
+-webkit-font-smoothing: antialiased;
 }
 
 .pure-img-responsive {
@@ -150,8 +229,8 @@ a.social-buttons {
 }
 
 a.social-buttons:hover {
-    background: white;
-    color: #6FBEF3
+    /*background: white;
+    color: #6FBEF3*/
 }
 
 
@@ -167,7 +246,7 @@ a.social-buttons:hover {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu {
-    background: #2d3e50;
+    background: black;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -203,7 +282,10 @@ a.social-buttons:hover {
  */
 
 .splash-container {
-    background: #BF3C31;
+    background: black;
+    background-image: url("http://i.imgur.com/LMlrdkK.jpg");
+    background-size: 150% 320%;
+    background-repeat: no-repeat;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -251,11 +333,11 @@ a.social-buttons:hover {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 100%;
     width: 90%;
     min-height: 12%;
     z-index: 2;
-    background: white;
+    /*background: white;*/
     margin-left: 5vw;
 }
 
@@ -264,11 +346,13 @@ a.social-buttons:hover {
     font-weight: 400;
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
+    /*font-size: 10em;*/
+    color: black;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
-    color: white;
+    color: #6fbef3;
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
@@ -288,6 +372,9 @@ a.social-buttons:hover {
 /* This is the class used for the footer */
 .footer {
     background: #111;
+    height: 1vh;
+    font-size: 0.7em;
+    padding: 0;
 }
 
 /*
@@ -344,9 +431,24 @@ a.social-buttons:hover {
  * On desktops and other large devices, we want to over-ride some
  * of the mobile and tablet styles.
  */
-@media (min-width: 78em) {
-    /* We increase the header font size even more */
+/*@media (min-width: 78em) {*/
+  /*@media (min-width: 20em) {
+     We increase the header font size even more
     .splash-head {
         font-size: 50%;
     }
-}
+    #real-name {
+      font-size: 4em;
+    }
+    a.social-buttons {
+        width: 35%;
+        height: 10vh;
+        font-size: 3.5em;
+        padding-top: 1vh;
+        margin-bottom: 0.5em;
+        margin-right: 0.5em;
+        margin-left: 0.4em;
+        margin-bottom: 1em;
+    }
+
+}*/
