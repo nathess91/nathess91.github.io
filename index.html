@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
-    <title>Natalia "Natawls" Hess</title>
+    <title>Natalia "Natawls" Hess | Developer</title>
 
     <!-- animate css stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -29,6 +29,8 @@
         <!--[if gt IE 8]><!-->
             <link rel="stylesheet" href="css/styles.css">
         <!--<![endif]-->
+
+        <script src="scripts.js"></script>
 </head>
 <body>
 
@@ -42,13 +44,14 @@
 
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" id="natawls" href="http://www.natawls.tech">natawls</a>
+        <!-- <a class="pure-menu-heading" id="natawls" href="http://www.natawls.tech">natawls</a> -->
+        <a href="http://www.natawls.tech"><img class="pure-menu-heading" src="images/logo.jpg" width="70"></a>
 
         <ul class="pure-menu-list">
-            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">about</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">portfolio</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">resume</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">contact</a></li>
+            <li class="pure-menu-item"><a href="#about" class="pure-menu-link">about</a></li>
+            <li class="pure-menu-item"><a href="#projects" class="pure-menu-link">projects</a></li>
+            <li class="pure-menu-item"><a href="documents/natalia_hess_resume.pdf" class="pure-menu-link">resume</a></li>
+            <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">contact</a></li>
         </ul>
     </div>
 </div>
@@ -68,6 +71,7 @@
             <a href="http://linkedin.com/in/nataliahess" class="pure-button social-buttons"><span class="fa fa-linkedin"> </span></a>
             <a href="http://medium.com/@natawls" class="pure-button social-buttons"><span class="fa fa-medium"> </span></a>
             <a href="http://purecss.io" class="pure-button social-buttons"><span class="fa fa-spotify"> </span></a>
+            <a href="http://purecss.io" class="pure-button social-buttons"><span class="fa fa-twitter"> </span></a>
         </p>
     </div>
 </div>
@@ -78,63 +82,131 @@
     <div class="pure-g">
       <div class="pure-u-2-5">
         <!-- ABOUT ME -->
-        <div class="l-box blue-background">
-          <h2 class="content-head is-center">ABOUT ME</h2>
-
-          <h2 class="content-head content-head-ribbon">I am a clown.</h2>
-          <p>Not really, but I do love to play with Rails. I am going to write
-            more here later but for now I need to keep doing other important things.
-            This is just a placeholder for now.
-          </p>
-
+        <a name="about"></a>
+        <div class="l-box" style="background-color:white">
+          <h2 class="content-head is-center">
+            <i class="fa fa-info-circle section-icon" aria-hidden="true"></i>
+            <br>
+            ABOUT ME
+          </h2>
+          <br>
+          <div class="content">
+              <img id="headshot" src="images/headshot.JPG" class="pull-left">
+              <h2 class="content-head content-head-ribbon" style="margin-top:0">"She gets sh*t done."</h2>
+              <p>
+              Software Engineer with a slick intuition for minimalist design and an insatiable appetite for knowledge and new projects. I am a master at strategic, creative problem solving and implementing those skills in my day-to-day life. When I am not building apps, I am crushing PRs at the gym and playing guitar/bass.
+            </p>
+            <ul>
+              <li>I am obsessed with Johann Sebastian Bach</li>
+            </ul>
+          </div>
         </div>
-        <!-- BEHIND THE CODE (EXPERIENCE) -->
+        <!-- EXPERIENCE -->
         <div class="l-box" style="background-color:orange">
-          <h2 class="content-head is-center">BEHIND THE CODE</h2>
+          <h2 class="content-head is-center">
+            <i class="fa fa-briefcase section-icon" aria-hidden="true"></i>
+            <br>
+            EXPERIENCE
+          </h2>
 
+          <div class="content is-center">
+          <h3 class="content-subhead is-center">Web Designer</h3>
+          <p>
+            I designed and formatted a website to facilitate personal branding and increase online presence. I implemented basic HTML and CSS to achieve these results. This was an independent project that I completed before I began pursuing web development. It acted as another "nudge" for me to take on an intensive bootcamp.
+          </p>
+          <h3 class="content-subhead is-center">Programming Fundamentals Tutor</h3>
+          <p>
+            After having experienced zero guidance with my bootcamp application process, I developed a lesson plan geared towards helping students better understand core fundamentals necessary to pass bootcamp technical interviews. I personally felt underprepared for my technical interviews, so I wanted to make sure that students did not have to experience the same thing.
+          </p>
+          <h3 class="content-subhead is-center">Assistant Manager</h3>
+          <p>I managed a fabrication studio where I worked on multiple projects in a collaborative environment. Some of these projects include a custom saw blade window portal, SUV rock sliders, and even pyrotechnics. I implemented specialized techniques such as MIG welding and blacksmithing. This experience was definitely outside of my comfort zone but I adapted by learning and perfecting new skills quickly.</p>
+
+          <h3 class="content-subhead is-center">Account Executive</h3>
+          <p>
+            I managed a pipeline of 100+ accounts on Salesforce. I was a top closer and I attribute my success to my creative and strategic problem solving skills. I created an email template so unorthodox that it worked--on an exceptional level. This template increased lead responses from 1 to 40 emails per day and is still in use by the company. Through this experience, I gained exposure to the tech industry and was able to shadow several software engineers.
+          </p>
+        </div>
         </div>
         <!-- EDUCATION -->
         <div class="l-box" style="background-color:purple">
-          <h2 class="content-head is-center">EDUCATION</h2>
+          <h2 class="content-head is-center">
+            <i class="fa fa-graduation-cap section-icon" aria-hidden="true"></i>
+            <br>
+            EDUCATION
+          </h2>
+          <div class="content">
+          <h2 class="content-head content-head-ribbon">General Assembly | 2016</h2>
+          <p>As a former MySpace princess, web development has always been a topic of interest to me. However, it was not until I was told about bootcamp programs that I seriously considered pursuing it. I love being able to create--what I consider--visual art with code. Nothing is more satisfying than stepping back from a full stack app and being able to say, “Yeah, I built that.” After noticing trends in my personal role in various projects, I would really like to explore front end design more in depth by learning React.js and Python.</p>
 
+          <h2 class="content-head content-head-ribbon">UC Davis | 2014</h2>
+          <p>Studying Political Science and German allowed me to discover my writing "voice"--in two languages. Learning German helped me more effectively scare people when I yell at them, while studying Political Science philosophy prepared my brain for the various edge cases I would encounter in coding. I studied Political Science with the intention of pursuing a career in law but realized that it was not my true passion. However, after creating logos for a handful of organizations, I discovered that I really enjoyed visual design.</p>
+        </div>
         </div>
       </div>
 
       <div class="pure-u-3-5">
         <!-- PROJECTS -->
         <!-- FEATURED: DOCKIT -->
-        <div class="l-box" style="background-color:yellow">
-          <h2 class="content-head is-center">FEATURED PROJECT</h2>
-          <div class="pure-g">
-            <!-- SCREENSHOT -->
+        <div id="featured" class="l-box" style="background-color:white">
+          <h2 class="content-head is-center">
+            <i class="fa fa-code section-icon" aria-hidden="true"></i>
+            <br>
+            FEATURED PROJECT
+          </h2>
 
-              <img id="featured-screenshot" class="pure-img" src="http://i.imgur.com/p9cwUvS.png">
+            <!-- SCREENSHOT -->
+            <br>
+              <img id="featured-screenshot" class="pure-img center-block" src="http://i.giphy.com/r4GXirbxTJ5bq.gif">
+              <img id="macbook" class="pure-img center-block" src="images/macbookpro.png">
 
             <!-- DESCRIPTION -->
-            <div class="pure-g l-box pure-u-4 pure-u-md-4-5 pure-u-lg-4-7">
+            <div class="content center-block">
 
-                <h3 class="content-subhead">DockIt</h3>
+                <h2 class="content-head content-head-ribbon">DockIt</h2>
                 <p>
-                  For my final project, I made it my personal goal to have at least one real user. I then found a client who needed a milennial-ized CRM to manage reconstruction/restoration assignments from start to finish. In less than 2 weeks, I finished a mobile responsive, custom CRM with full user authentication and authorization with three distinct roles (basic user, manager, and admin).
+                  Dock It is a solo project based on the request of a client whose nationally-based restoration company needed a millennial-ized CRM to manage assignments from start to finish. In less than 2 weeks, I presented a mobile responsive, custom CRM with full user authentication and authorization with three distinct roles (basic user, manager, and admin).
                 </p>
+                <h3 class="content-subhead">UX-First Core Functionality</h3>
+                <p>
+                  The main dock has 4 essential tools designed to keep assignments organized and ensure responsibilities are manged in a timely manner.
+                </p>
+                <ul>
+                  <li>To-Do List</li>
+                  <li>Assignments</li>
+                  <li>Resources</li>
+                  <li>Bulletin Board</li>
+                </ul>
+                <p>
+                  I wanted to ensure the best possible user experience so I worked closely with the client to identify how to display tons of information without cluttering the screen. I made this magic happen with a front end framework I like to call "Fangular" and <i>a lot</i> of collapsible content.
+                </p>
+                <h3 class="content-subhead">Fangular</h3>
+                <p>
+                   The client stressed the importance of having everything one one page but I was building this app with Rails, where the standard is a multi-page format. I manipulated the hell out of it with custom JavaScript functions to impersonate (or fake) a client-side MVC framework like AngularJS...hence, "Fangular".
+                </p>
+
             </div>
             <!-- GITHUB LINK -->
-          </div>
+
         </div>
 
         <!-- OTHER PROJECTS -->
-        <div class="l-box" style="background-color:brown">
-          <h2 class="content-head is-center">OTHER PROJECTS</h2>
+        <a name="projects"></a>
+        <div class="l-box" style="background-color:brown;">
+          <h2 class="content-head is-center">
+            <i class="fa fa-cog section-icon" aria-hidden="true"></i>
+            <br>
+            OTHER PROJECTS
+          </h2>
             <!-- SWOLEMATES -->
-            <div class="pure-g">
+            <div class="center-project">
               <!-- SCREENSHOT -->
               <div class="l-box pure-u-2 pure-u-md-2-3 pure-u-lg-2-5">
 
-                  <img class="screenshot pure-img" src="http://i.imgur.com/N8V8oYV.png">
+                  <img class="screenshot pure-img pull-left" src="http://i.imgur.com/N8V8oYV.png">
 
               </div>
               <!-- DESCRIPTION -->
-              <div class="l-box pure-u-2 pure-u-md-2-3 pure-u-lg-2-5">
+              <div class="l-box pure-u-2 pure-u-md-2-3 pure-u-lg-2-5 description pull-right">
                 <h3 class="content-subhead">Swolemates</h3>
                 <p>
                   Swolemates is an app where a user can create an account, log some workouts,
@@ -145,12 +217,12 @@
 
                 <a href="http://github.com/teddycoleman/swolemates" class="pure-button social-buttons"><span class="fa fa-github"> </span></a>
               </div>
-          </div>
+            </div>
 
           <!-- FELLOWSHIPADVISOR -->
-          <div class="pure-g">
+
             <!-- DESCRIPTION -->
-            <div class="l-box pure-u-2 pure-u-md-2-3 pure-u-lg-2-5">
+            <div class="l-box pure-u-2 pure-u-md-2-3 pure-u-lg-2-5 description pull-left">
               <h3 class="content-subhead">FellowshipAdvisor</h3>
               <p>
                 Swolemates is an app where a user can create an account, log some workouts,
@@ -164,22 +236,22 @@
             <!-- SCREENSHOT -->
             <div class="l-box pure-u-2 pure-u-md-2-3 pure-u-lg-2-5">
 
-                <img class="screenshot pure-img" src="http://i.imgur.com/p9Z2OP3.png">
+                <img class="screenshot pure-img pull-right" src="http://i.imgur.com/p9Z2OP3.png">
 
             </div>
-          </div>
+
 
 
           <!-- PAWS -->
-          <div class="pure-g">
+          <div class="center-project" style="display:inline-block">
             <!-- SCREENSHOT -->
             <div class="l-box pure-u-2 pure-u-md-2-3 pure-u-lg-2-5">
 
-                <img class="screenshot pure-img" src="http://i.imgur.com/Q4cn79i.png">
+                <img class="screenshot pure-img pull-left" src="http://i.imgur.com/Q4cn79i.png">
 
             </div>
             <!-- DESCRIPTION -->
-            <div class="l-box pure-u-2 pure-u-md-2-3 pure-u-lg-2-5">
+            <div class="l-box pure-u-2 pure-u-md-2-3 pure-u-lg-2-5 description pull-right">
               <h3 class="content-subhead">.paws()</h3>
               <p>
                 Swolemates is an app where a user can create an account, log some workouts,
@@ -188,19 +260,22 @@
               </p>
               <!-- GITHUB LINK -->
 
-              <a href="http://github.com/teddycoleman/swolemates" class="pure-button social-buttons"><span class="fa fa-github"> </span></a>
+              <a href="https://github.com/ckc1230/paws" class="pure-button social-buttons"><span class="fa fa-github"> </span></a>
             </div>
-        </div>
+          </div>
 
 
         </div>
     </div>
 
     <!-- END PORTFOLIO SECTION -->
-
-    <div class="content">
-        <h2 class="content-head is-center">SEND ME A LOVE LETTER (OR HATE MAIL)</h2>
-
+    <div class="content" style="background-color:white">
+      <a name="contact"></a>
+        <h2 class="content-head is-center">
+          <i class="fa fa-paper-plane section-icon" aria-hidden="true"></i>
+          <br>
+          SEND LOVE LETTERS (OR HATE MAIL)
+          </h2>
         <div class="pure-g">
             <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
                 <h4>Contact Us</h4>
@@ -218,33 +293,34 @@
                 </p>
             </div>
             <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <form class="pure-form pure-form-stacked">
+                <form class="pure-form pure-form-stacked" action="mailto:nathess91@gmail.com" method="post">
                     <fieldset>
 
                         <label for="name">Your Name</label>
-                        <input id="name" type="text" placeholder="Your Name">
+                        <input class="pure-input-rounded" id="name" type="text" required>
 
 
                         <label for="email">Your Email</label>
-                        <input id="email" type="email" placeholder="Your Email">
+                        <input style="margin-bottom:0" class="pure-input-rounded" id="email" type="email" required>
+                        <small>Example: <b>bob@bobloblaw.com</b></small>
 
                         <label for="password">Your Message</label>
-                        <textarea style="width:100%"></textarea>
+                        <textarea class="pure-input-rounded" style="width:100%;height:15vh"></textarea>
 
-                        <button type="submit" class="pure-button">Sign Up</button>
                     </fieldset>
+                    <input type="submit" value="Send" class="pure-button"></input>
                 </form>
             </div>
         </div>
 
     </div>
 
-    <div class="footer l-box is-center">
-        &copy; Natalia M. Hess
-    </div>
 
 </div>
 
+<div class="footer l-box is-center">
+  &copy; Natalia M. Hess
+</div>
 
 
 
