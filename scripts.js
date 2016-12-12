@@ -1,10 +1,46 @@
 $(document).ready(function() {
-  $(".social-buttons").mouseover(function() {
-    $(".social-buttons").addClass("animated infinite rubberBand");
+  // github
+  $("#social-github").mouseover(function() {
+    $("#social-github").addClass("animated infinite rubberBand");
   });
-  $(".social-buttons").mouseout(function() {
-    $(".social-buttons").removeClass("animated infinite rubberBand");
+  $("#social-github").mouseout(function() {
+    $("#social-github").removeClass("animated infinite rubberBand");
   });
+  // linkedin
+  $("#social-linkedin").mouseover(function() {
+    $("#social-linkedin").addClass("animated infinite rubberBand");
+  });
+  $("#social-linkedin").mouseout(function() {
+    $("#social-linkedin").removeClass("animated infinite rubberBand");
+  });
+  // medium
+  $("#social-medium").mouseover(function() {
+    $("#social-medium").addClass("animated infinite rubberBand");
+  });
+  $("#social-medium").mouseout(function() {
+    $("#social-medium").removeClass("animated infinite rubberBand");
+  });
+  // spotify
+  $("#social-spotify").mouseover(function() {
+    $("#social-spotify").addClass("animated infinite rubberBand");
+  });
+  $("#social-spotify").mouseout(function() {
+    $("#social-spotify").removeClass("animated infinite rubberBand");
+  });
+  // twitter
+  $("#social-twitter").mouseover(function() {
+    $("#social-twitter").addClass("animated infinite rubberBand");
+  });
+  $("#social-twitter").mouseout(function() {
+    $("#social-twitter").removeClass("animated infinite rubberBand");
+  });
+
+
+
+
+
+
+
 
   $(".email-button").mouseover(function() {
     $("#envelope").addClass("fa fa-envelope-open");
