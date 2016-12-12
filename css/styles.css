@@ -110,19 +110,22 @@ a:hover {
 }
 
 #featured-screenshot {
-  width: 61.5%;
-  height: 33.9vh;
+  /*width: 61.5%;
+  height: 33.9vh;*/
   position: absolute;
   z-index: 2;
-  left: 10.4vw;
-  top: 31.5vh;
+  /*left: 10.4vw;*/
+  /*top: 31.5vh;*/
+  left: 35%;
+  width: 30%;
+  top: 20%;
 }
 
 #macbook {
-  /*z-index: 1;*/
-  /*position: absolute;*/
-  width: 90%;
-  height: 49vh;
+  /*width: 90%;
+  height: 49vh;*/
+  height: 40vh;
+  width: 38vw;
 }
 
 .glow {
@@ -619,11 +622,29 @@ footer#span {
        margin-top: 55vh;
     }
     #real-name {
-      font-size: 4.3em;
+      font-size: 4em;
     }
     .social-media {
       margin-top: -40vh;
       display: inline;;
+    }
+    .description {
+      width: 100%;
+    }
+    .email-button {
+      /*padding: 0.3em 1em;*/
+      width: 40%;
+
+    }
+    #featured-screenshot {
+      width: 50vw;
+      top: 27.5vh;
+      left: 20vw;
+    }
+
+    #macbook {
+      height: 21vh;
+      width: 70vw;
     }
 
 }
