@@ -1,8 +1,96 @@
-#headshot {
+.email-button {
+  background-color: white;
+  color: black;
+  padding: 0.3em 1em;
+  width: 20%;
+  border-radius: 20px;
+}
+
+.email-button:hover {
+  position: relative;
+   top: -3px;
+   left: -3px;
+   box-shadow: 1px 1px #fe41b4,
+                2px 2px #fe41b4,
+                3px 3px #fe41b4,
+                4px 4px #fe41b4,
+                5px 5px #fe41b4,
+                6px 6px #fe41b4;
+
+}
+
+#email {
+  padding-left: 50%;
+}
+
+.project-github {
+  color: white;
+  font-size: 2em;
+}
+
+.project-github:hover {
+  position: relative;
+   top: -3px;
+   left: -3px;
+   text-shadow: 1px 1px #fe41b4,
+                2px 2px #fe41b4,
+                3px 3px #fe41b4,
+                4px 4px #fe41b4,
+                5px 5px #fe41b4,
+                6px 6px #fe41b4;
+}
+
+.school {
+  margin-bottom: 0.5vh;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.degree {
+  margin: 0;
+}
+
+.section-divider {
+  border-bottom: 2px solid #7f8c8d;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: none;
+
+}
+
+.carat {
+  color: #7f8c8d;
+
+}
+
+.carat:hover {
+
+}
+
+.job-title {
+  margin-bottom: 0;
+}
+
+.date-range {
+  margin-top: 0;
+  margin-bottom: 1vh;
+  color: #6fbef3;
+}
+
+.circle-image {
   border-radius: 50%;
+
+}
+
+#headshot {
   width: 10vw;
   margin-right: 1.5vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #featured {
@@ -11,7 +99,7 @@
 
 #featured-screenshot {
   width: 61.5%;
-  height: 22%;
+  height: 33.9vh;
   position: absolute;
   z-index: 2;
   left: 10.4vw;
@@ -40,7 +128,9 @@
 
 .screenshot {
   width: 100%;
-  margin-top: 6vh;
+  margin-top: 7vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 3vh;
 }
 
 .center-block {
@@ -102,12 +192,16 @@ textarea {
   /*-webkit-animation-delay: 1s;*/
   /*margin-top: -350vh;*/
   display: inline-block;
+  color: white;
+  text-shadow: 2px 2px 4px #000000
 }
 
 #developer {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 0.5s;
-  color: #6FBEF3;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.3em;
 }
 
 .blue-background {
@@ -159,6 +253,7 @@ label {
 p, ul {
 font-weight: lighter;
 -webkit-font-smoothing: antialiased;
+color: #d0cfcf;
 }
 
 .pure-img-responsive {
@@ -172,6 +267,7 @@ font-weight: lighter;
  */
 .l-box {
     padding: 1em;
+    background-color: black !important;
 }
 
 .l-box-lrg {
@@ -208,10 +304,10 @@ font-weight: lighter;
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 0.5em 2em;
-
+    /*width: 10%;*/
 }
 
 a.pure-button-primary {
@@ -221,8 +317,10 @@ a.pure-button-primary {
 }
 
 a.social-buttons {
-    background: #6FBEF3;
-    color: black;
+    background: #fe41b4;
+    color: white;
+
+    text-shadow: 0 0 2px black;
     font-size: 120%;
     padding: 0.1em 0.6em;
     margin-right: 0.5vw;
@@ -266,7 +364,8 @@ a.social-buttons:hover {
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    padding-top: 0.7em;
+    color: white;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
@@ -283,14 +382,16 @@ a.social-buttons:hover {
 
 .splash-container {
     background: black;
-    background-image: url("http://i.imgur.com/LMlrdkK.jpg");
-    background-size: 150% 320%;
+    /*background-image: url("http://i.imgur.com/LMlrdkK.jpg");*/
+    /*background-size: 150% 320%;*/
+    background-size: cover;
+    background-image: url("http://i.imgur.com/fMTnqTD.jpg");
     background-repeat: no-repeat;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 88%;
+    height: 100%;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -300,7 +401,8 @@ a.social-buttons:hover {
     /* absolute center .splash within .splash-container */
     width: 80%;
     height: 50%;
-    margin: auto;
+    margin-top: 20vh;
+    margin-left: 45vw;
     position: absolute;
     top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
@@ -347,17 +449,18 @@ a.social-buttons:hover {
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
     /*font-size: 10em;*/
-    color: black;
+    color: white;
 }
+
 
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
-    color: #6fbef3;
+    color: #1ef2f6;
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-    color: #1f8dd6;
+    color: #0ce695;
 }
     .content-subhead i {
         margin-right: 7px;
@@ -371,10 +474,11 @@ a.social-buttons:hover {
 
 /* This is the class used for the footer */
 .footer {
-    background: #111;
+    background: black;
     height: 1vh;
     font-size: 0.7em;
-    padding: 0;
+    /*padding: 0;*/
+    padding-bottom: 2em;
 }
 
 /*
@@ -425,6 +529,53 @@ a.social-buttons:hover {
     }
 
 }
+
+/* COLLAPSE */
+.web-designer-details,
+#show1,
+#hide1:target {
+    display: none;
+}
+
+#hide1:target + #show1,
+#hide1:target ~ .web-designer-details {
+    display: inline;
+}
+
+.tutor-details,
+#show2,
+#hide2:target {
+    display: none;
+}
+
+#hide2:target + #show2,
+#hide2:target ~ .tutor-details {
+    display: inline;
+}
+
+.manager-details,
+#show3,
+#hide3:target {
+    display: none;
+}
+
+#hide3:target + #show3,
+#hide3:target ~ .manager-details {
+    display: inline;
+}
+
+.yelp-details,
+#show4,
+#hide4:target {
+    display: none;
+}
+
+#hide4:target + #show4,
+#hide4:target ~ .yelp-details {
+    display: inline;
+}
+
+/* END COLLAPSE */
 
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
