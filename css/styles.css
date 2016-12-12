@@ -1,3 +1,19 @@
+.social-media {
+  background: none !important;
+}
+
+.golden {
+  color: #f5b833;
+}
+
+#send-email {
+  font-size: smaller;
+}
+
+#send-email, #envelope {
+  background-color: white;
+}
+
 .email-button {
   background-color: white;
   color: black;
@@ -17,10 +33,6 @@
                 5px 5px #fe41b4,
                 6px 6px #fe41b4;
 
-}
-
-#email {
-  padding-left: 50%;
 }
 
 .project-github {
@@ -70,7 +82,7 @@ a:hover {
 }
 
 .carat:hover {
-
+  color: #f5b833;
 }
 
 .job-title {
@@ -193,7 +205,12 @@ textarea {
   /*margin-top: -350vh;*/
   display: inline-block;
   color: white;
-  text-shadow: 2px 2px 4px #000000
+  text-shadow: 2px 2px 4px #000000;
+  backround: none !important;
+}
+
+#real-name.splash-head {
+  background: none !important;
 }
 
 #developer {
@@ -202,6 +219,7 @@ textarea {
   color: black;
   font-weight: bolder;
   font-size: 1.3em;
+  background: none !important;
 }
 
 .blue-background {
@@ -227,6 +245,7 @@ textarea {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: black;
 }
 
 /*
@@ -326,8 +345,12 @@ a.social-buttons {
     margin-right: 0.5vw;
 }
 
+.pinkify {
+  background: #fe41b4;
+}
+
 a.social-buttons:hover {
-    /*background: white;
+    background: #fe41b4;
     color: #6FBEF3*/
 }
 
@@ -381,11 +404,8 @@ a.social-buttons:hover {
  */
 
 .splash-container {
-    background: black;
-    /*background-image: url("http://i.imgur.com/LMlrdkK.jpg");*/
-    /*background-size: 150% 320%;*/
     background-size: cover;
-    background-image: url("http://i.imgur.com/fMTnqTD.jpg");
+    background-image: url("http://i.imgur.com/fMTnqTD.jpg") !important;
     background-repeat: no-repeat;
     z-index: 1;
     overflow: hidden;
@@ -406,6 +426,7 @@ a.social-buttons:hover {
     position: absolute;
     top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
+    background: none !important;
 }
 
 /* This is the main heading that appears on the blue section */
@@ -473,12 +494,18 @@ a.social-buttons:hover {
 }
 
 /* This is the class used for the footer */
-.footer {
-    background: black;
-    height: 1vh;
-    font-size: 0.7em;
-    /*padding: 0;*/
-    padding-bottom: 2em;
+footer {
+  /*font-weight: bolder;*/
+  color: white;
+  /*padding-left: 9vw;*/
+  /*width: 100vw;*/
+  z-index: 2;
+  font-size: smaller;
+  color: #d0cfcf;
+}
+
+footer#span {
+  background: none !important;
 }
 
 /*
@@ -582,24 +609,21 @@ a.social-buttons:hover {
  * On desktops and other large devices, we want to over-ride some
  * of the mobile and tablet styles.
  */
-/*@media (min-width: 78em) {*/
-  /*@media (min-width: 20em) {
-     We increase the header font size even more
-    .splash-head {
-        font-size: 50%;
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+     .splash {
+       margin: auto;
+       margin-top: 55vh;
     }
     #real-name {
-      font-size: 4em;
+      font-size: 4.3em;
     }
-    a.social-buttons {
-        width: 35%;
-        height: 10vh;
-        font-size: 3.5em;
-        padding-top: 1vh;
-        margin-bottom: 0.5em;
-        margin-right: 0.5em;
-        margin-left: 0.4em;
-        margin-bottom: 1em;
+    .social-media {
+      margin-top: -40vh;
+      display: inline;;
     }
 
-}*/
+}

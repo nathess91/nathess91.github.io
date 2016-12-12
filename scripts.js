@@ -7,12 +7,12 @@ $(document).ready(function() {
   });
 
   $(".email-button").mouseover(function() {
-    // $("#envelope").addClass("fa fa-envelope-open");
+    $("#envelope").addClass("fa fa-envelope-open");
     $("#send-email").html("NataliaM.Hess@gmail.com");
   });
   $(".email-button").mouseout(function() {
-    // $("#envelope").removeClass("fa fa-envelope-open");
-    // $("#envelope").addClass("fa fa-envelope");
+    $("#envelope").removeClass("fa fa-envelope-open");
+    $("#envelope").addClass("fa fa-envelope");
     $("#send-email").html("Send Email");
   });
 
