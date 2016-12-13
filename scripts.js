@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // MAKE THEM SOCIAL ICONS BOUNCE
   // github
   $("#social-github").mouseover(function() {
     $("#social-github").addClass("animated infinite rubberBand");
@@ -36,12 +37,7 @@ $(document).ready(function() {
   });
 
 
-
-
-
-
-
-
+  // ANIMATE EMAIL BUTTON
   $(".email-button").mouseover(function() {
     $("#envelope").addClass("fa fa-envelope-open");
     $("#send-email").html("NataliaM.Hess@gmail.com");
@@ -50,6 +46,25 @@ $(document).ready(function() {
     $("#envelope").removeClass("fa fa-envelope-open");
     $("#envelope").addClass("fa fa-envelope");
     $("#send-email").html("Send Email");
+  });
+
+  // BUTTON PRESS COOL STUFF
+  $(".project-github").click(function() {
+    $(".project-github").css({
+      "text-shadow": "none",
+      "top": "1px",
+      "left": "1px",
+      "position": "none"
+    });
+  });
+
+  $(".email-button").click(function() {
+    $(".email-button").css({
+      "text-shadow": "none",
+      "top": "1px",
+      "left": "1px",
+      "position": "none"
+    });
   });
 
 });

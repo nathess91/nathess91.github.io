@@ -1,5 +1,9 @@
-.no-bullets {
-  list-style-type: none;
+#general-assembly {
+  width: 100%;
+}
+
+.white-border {
+  border: 5px solid white;
 }
 
 .social-media {
@@ -97,6 +101,7 @@ a:hover {
   margin-top: 0;
   margin-bottom: 1vh;
   color: #6fbef3;
+
 }
 
 .circle-image {
@@ -165,18 +170,15 @@ a:hover {
   float: right !important;
 }
 
-.text-right
-{
+.text-right {
     text-align: right !important;
 }
 
-.text-center
-{
+.text-center {
     text-align: center !important;
 }
 
-.text-left
-{
+.text-left {
     text-align: left !important;
 }
 
@@ -257,7 +259,6 @@ textarea {
 
 /*
  * -- BASE STYLES --
- * Most of these are inherited from Base, but I want to change a few.
  */
 body {
     line-height: 1.7em;
@@ -289,7 +290,6 @@ color: #d0cfcf;
 
 /*
  * -- LAYOUT STYLES --
- * These are some useful classes which I will need
  */
 .l-box {
     padding: 1em;
@@ -309,7 +309,6 @@ color: #d0cfcf;
 
 /*
  * -- PURE FORM STYLES --
- * Style the form inputs and labels
  */
 .pure-form label {
     margin: 1em 0 0;
@@ -327,7 +326,6 @@ color: #d0cfcf;
 
 /*
  * -- PURE BUTTON STYLES --
- * I want my pure-button elements to look a little different
  */
 .pure-button {
     background-color: white;
@@ -366,7 +364,6 @@ a.social-buttons:hover {
 
 /*
  * -- MENU STYLES --
- * I want to customize how my .pure-menu looks at the top of the page
  */
 
 .home-menu {
@@ -377,9 +374,9 @@ a.social-buttons:hover {
     background: black;
 }
 .pure-menu.pure-menu-fixed {
-    /* Fixed menus normally have a border at the bottom. */
+
     border-bottom: none;
-    /* I need a higher z-index here because of the scroll-over effect. */
+
     z-index: 4;
 }
 
@@ -407,7 +404,6 @@ a.social-buttons:hover {
 
 /*
  * -- SPLASH STYLES --
- * This is the blue top section that appears on the page.
  */
 
 .splash-container {
@@ -416,7 +412,7 @@ a.social-buttons:hover {
     background-repeat: no-repeat;
     z-index: 1;
     overflow: hidden;
-    /* The following styles are required for the "scroll-over" effect */
+
     width: 100%;
     height: 100%;
     top: 0;
@@ -436,7 +432,7 @@ a.social-buttons:hover {
     background: none !important;
 }
 
-/* This is the main heading that appears on the blue section */
+
 .splash-head {
     font-size: 7em;
     color: white;
@@ -449,7 +445,7 @@ a.social-buttons:hover {
 
 
 
-/* This is the subheading that appears on the blue section */
+
 .splash-subhead {
     color: white;
     letter-spacing: 0.3em;
@@ -458,20 +454,18 @@ a.social-buttons:hover {
 
 /*
  * -- CONTENT STYLES --
- * This represents the content area (everything below the blue section)
  */
 .content-wrapper {
-    /* These styles are required for the "scroll-over" effect */
+
     position: absolute;
     top: 100%;
     width: 90%;
     min-height: 12%;
     z-index: 2;
-    /*background: white;*/
+
     margin-left: 5vw;
 }
 
-/* This is the class used for the main content headers (<h2>) */
 .content-head {
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -480,13 +474,10 @@ a.social-buttons:hover {
     color: white;
 }
 
-
-/* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
     color: #1ef2f6;
 }
 
-/* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
     color: #0ce695;
 }
@@ -494,13 +485,13 @@ a.social-buttons:hover {
         margin-right: 7px;
     }
 
-/* This is the class used for the dark-background areas. */
+
 .ribbon {
     background: #2d3e50;
     color: #aaa;
 }
 
-/* This is the class used for the footer */
+
 footer {
   /*font-weight: bolder;*/
   color: white;
@@ -517,22 +508,15 @@ footer#span {
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
- * On tablets and other medium-sized devices, we want to customize some
- * of the mobile styles.
  */
 @media (min-width: 48em) {
 
-    /* We increase the body font size */
     body {
         font-size: 16px;
     }
-    /* We want to give the content area some more padding */
     .content {
         padding: 1em;
     }
-
-    /* We can align the menu header to the left, but float the
-    menu items to the right. */
     .home-menu {
         text-align: left;
     }
@@ -540,13 +524,11 @@ footer#span {
             float: right;
         }
 
-    /* We increase the height of the splash-container */
-/*    .splash-container {
+/*
+  .splash-container {
         height: 500px;
     }*/
 
-    /* We decrease the width of the .splash, since we have more width
-    to work with */
     .splash {
         width: 50%;
         height: 50%;
@@ -557,7 +539,7 @@ footer#span {
     }
 
 
-    /* We remove the border-separator assigned to .l-box-lrg */
+
     .l-box-lrg {
         border: none;
     }
@@ -609,28 +591,40 @@ footer#span {
     display: inline;
 }
 
+.wdi-details,
+#show5,
+#hide5:target {
+    display: none;
+}
+
+#hide5:target + #show5,
+#hide5:target ~ .wdi-details {
+    display: inline;
+}
+
 /* END COLLAPSE */
 
 /*
- * -- DESKTOP (AND UP) MEDIA QUERIES --
- * On desktops and other large devices, we want to over-ride some
- * of the mobile and tablet styles.
+ * -- MEDIA QUERIES --
  */
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-     .splash {
+    .splash {
        margin: auto;
-       margin-top: 38vh;
+       margin-top: 55vh;
     }
     #real-name {
-      font-size: 2em;
+      font-size: calc(4em + 1vw);
+    }
+    #developer {
+      font-size: calc(0.8em + 1vw);
     }
     .social-media {
       margin-top: -40vh;
-      display: inline;;
+      display: inline;
     }
     .description {
       width: 100%;
@@ -650,5 +644,25 @@ footer#span {
       height: 21vh;
       width: 70vw;
     }
-
+    #headshot {
+      width: 32vw;
+      margin-right: 1em;
+    }
+    #ga-responsive {
+      width: 100%;
+    }
+    #jobs {
+      width: 100%;
+    }
+    a.social-buttons {
+      padding-left: 0.6em;
+      padding-right: 0.6em;
+      font-size: 2em;
+    }
+    #contact {
+      padding-top: 0 !important;
+    }
+    .screenshot-box {
+      width: 100%;
+    }
 }
