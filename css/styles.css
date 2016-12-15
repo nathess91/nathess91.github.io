@@ -620,10 +620,13 @@ footer#span {
     }
     #real-name {
       font-size: calc(3.5em + 1vw);
-      /*letter-spacing: 0.0001em;*/
+
     }
     #developer {
-      font-size: calc(0.8em + 1vw);
+      font-size: calc(0.9em + 1vw);
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      letter-spacing: 0.01em;
     }
     .social-media {
       margin-top: -40vh;
