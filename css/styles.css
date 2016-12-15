@@ -615,10 +615,12 @@ footer#span {
 
     .splash {
        margin: auto;
-       margin-top: 55vh;
+       margin-top: 55.5vh;
+       width: 100%;
     }
     #real-name {
-      font-size: calc(2em + 1vw);
+      font-size: calc(3em + 1vw);
+      letter-spacing: 0.0001em;
     }
     #developer {
       font-size: calc(0.8em + 1vw);
