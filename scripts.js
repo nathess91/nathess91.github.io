@@ -67,6 +67,11 @@ $(document).ready(function() {
     });
   });
 
-
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+function Chrome() {
+  if (!isChrome) {
+    alert("This portfolio is best viewed in Chrome.");
+  }
+}
 
 });
