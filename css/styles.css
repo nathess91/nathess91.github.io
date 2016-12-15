@@ -607,6 +607,7 @@ footer#span {
 /*
  * -- MEDIA QUERIES --
  */
+
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
@@ -617,7 +618,8 @@ footer#span {
        margin-top: 55vh;
     }
     #real-name {
-      font-size: calc(4em + 1vw);
+      font-size: calc(3em + 1vw);
+      letter-spacing: 0.0001em;
     }
     #developer {
       font-size: calc(0.8em + 1vw);
