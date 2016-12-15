@@ -618,8 +618,7 @@ footer#span {
        margin-top: 55vh;
     }
     #real-name {
-      font-size: calc(3em + 1vw);
-      letter-spacing: 0.0001em;
+      font-size: calc(2em + 1vw);
     }
     #developer {
       font-size: calc(0.8em + 1vw);
