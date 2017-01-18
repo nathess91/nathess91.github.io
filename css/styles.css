@@ -533,10 +533,11 @@ footer {
   /*font-weight: bolder;*/
   color: white;
   /*padding-left: 9vw;*/
-  /*width: 100vw;*/
+  width: 100vw;
   z-index: 2;
   font-size: smaller;
   color: #d0cfcf;
+  letter-spacing: 0;
 }
 
 footer#span {
@@ -716,4 +717,5 @@ footer#span {
         float: left;
         margin-top: 0;
       }
+
 }
