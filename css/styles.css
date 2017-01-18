@@ -1,9 +1,36 @@
+.devicon {
+  font-size: 2em;
+}
+
+.horizontal-scroll {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.slick-next:before {
+  content: ">" !important;
+  font-weight: bolder;
+}
+
+.slick-prev:before {
+  content: "<" !important;
+  font-weight: bolder;
+}
+
 #general-assembly {
   width: 100%;
 }
 
 .white-border {
   border: 5px solid white;
+}
+
+
+.pure-menu-list-responsive {
+  display: none !important;
+  background-color: black;
 }
 
 .social-media {
@@ -20,6 +47,10 @@
 
 #send-email, #envelope {
   background-color: white;
+}
+
+#email-address {
+  display: none;
 }
 
 .email-button {
@@ -127,7 +158,10 @@ a:hover {
   /*top: 31.5vh;*/
   left: 35%;
   width: 30%;
-  top: 20%;
+  /*top: 20.8%;*/
+  top: 33.8vh;
+  /*height: 16.5%;*/
+  height: 27vh;
 }
 
 #macbook {
@@ -422,7 +456,8 @@ a.social-buttons:hover {
 
 .splash {
     /* absolute center .splash within .splash-container */
-    width: 80%;
+    /*width: 80%;*/
+    width: auto;
     height: 50%;
     margin-top: 20vh;
     margin-left: 45vw;
@@ -441,6 +476,8 @@ a.social-buttons:hover {
     /*font-weight: 100;*/
     /*border-radius: 5px;*/
     /*line-height: 1em;*/
+    /*width: 100vw;*/
+    /*margin-left: -25vw;*/
 }
 
 
@@ -608,13 +645,10 @@ footer#span {
  * -- MEDIA QUERIES --
  */
 
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen and (max-width: 500px) {
     .splash {
-       margin: auto;
+       margin-left: 0;
+       margin-right: 0;
        margin-top: 48vh;
        width: 100%;
     }
@@ -637,18 +671,8 @@ footer#span {
     }
     .email-button {
       /*padding: 0.3em 1em;*/
-      width: 40%;
+      width: 60%;
 
-    }
-    #featured-screenshot {
-      width: 50vw;
-      top: 27.5vh;
-      left: 20vw;
-    }
-
-    #macbook {
-      height: 21vh;
-      width: 70vw;
     }
     #headshot {
       width: 32vw;
@@ -661,9 +685,9 @@ footer#span {
       width: 100%;
     }
     a.social-buttons {
-      padding-left: 0.6em;
-      padding-right: 0.6em;
-      font-size: 2em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      font-size: 1.8em;
     }
     #contact {
       padding-top: 0 !important;
@@ -671,4 +695,25 @@ footer#span {
     .screenshot-box {
       width: 100%;
     }
+    #send-email {
+      display: none;
+    }
+    #email-address {
+      display: inline-block;
+      background: white;
+      font-size: 0.8em;
+    }
+    .slick-initialized .slick-slide {
+      height: 190px;
+    }
+    .pure-menu-list {
+      display: none !important;
+    }
+    .pure-menu-list-responsive {
+      padding-left: 0;
+    }
+      #nh {
+        float: left;
+        margin-top: 0;
+      }
 }

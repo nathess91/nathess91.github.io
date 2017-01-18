@@ -32,6 +32,11 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <script src="scripts.js"></script>
+
+        <!-- slick cdn -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 <body>
 
@@ -44,17 +49,29 @@
 
 
 <div class="header">
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed pure-menu-lg">
         <!-- <a class="pure-menu-heading" id="natawls" href="http://www.natawls.tech">natawls</a> -->
         <a href="http://www.natawls.tech"><img class="pure-menu-heading" src="images/logo.jpg" width="70"></a>
 
         <ul class="pure-menu-list">
-            <!-- <li class="pure-menu-item"><a href="#about" class="pure-menu-link">about</a></li> -->
+            <li class="pure-menu-item"><a href="#about" class="pure-menu-link">about</a></li>
             <li class="pure-menu-item"><a href="#projects" class="pure-menu-link">projects</a></li>
             <li class="pure-menu-item"><a href="#experience" class="pure-menu-link">experience</a></li>
             <li class="pure-menu-item"><a href="https://drive.google.com/file/d/0B9l5_8XfYMbhS1dYNjJMMXE0TVdVbEllN3hpQ0RpcEdEQy13/view?usp=sharing" class="pure-menu-link">resume</a></li>
             <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">contact</a></li>
         </ul>
+
+    </div>
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed pure-menu-list-responsive center-block">
+      <a id="nh" href="http://www.natawls.tech"><img class="pure-menu-heading" src="images/logo.jpg" width="60"></a>
+      <br>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#about" class="pure-menu-link">about</a></li><br>
+        <li class="pure-menu-item"><a href="#projects" class="pure-menu-link">projects</a></li><br>
+        <li class="pure-menu-item"><a href="#experience" class="pure-menu-link">experience</a></li><br>
+        <li class="pure-menu-item"><a href="https://drive.google.com/file/d/0B9l5_8XfYMbhS1dYNjJMMXE0TVdVbEllN3hpQ0RpcEdEQy13/view?usp=sharing" class="pure-menu-link">resume</a></li><br>
+        <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">contact</a></li>
+      </ul>
     </div>
 </div>
 
@@ -95,7 +112,7 @@
           <br>
           <div class="content section-divider">
               <img id="headshot" src="http://i.giphy.com/efQmPYoT0P5CM.gif" class="circle-image pull-left">
-              <h2 class="content-head content-head-ribbon" style="margin-top:0">"She gets sh*t done."</h2>
+              <h2 class="content-head content-head-ribbon" style="margin-top:0"><span class="animated infinite flash">"She gets sh*t done."</span></h2>
               <p>
               Software Engineer with a slick intuition for minimalist design and an insatiable appetite for knowledge and new projects.
               </p>
@@ -114,6 +131,85 @@
             <br>
           </div>
         </div>
+
+        <!-- TECHNOLOGIES -->
+        <div class="l-box">
+          <h2 class="content-head is-center">
+            <i class="fa fa-cubes section-icon" aria-hidden="true"></i>
+            <br>
+            TECHNOLOGIES &amp; OTHER TOYS
+          </h2>
+          <br>
+          <div class="content is-center">
+
+            <div class="horizontal-scroll">
+              <div>
+                <i class="devicon-html5-plain colored devicon"></i>
+                <p>HTML</p>
+                <i class="devicon-css3-plain colored devicon"></i>
+                <p>CSS</p>
+              </div>
+
+              <div>
+                <i class="devicon-javascript-plain colored devicon"></i>
+                <p>JavaScript</p>
+                <i class="devicon-jquery-plain colored devicon"></i>
+                <p>jQuery</p>
+              </div>
+
+              <div>
+                <i class="devicon-ruby-plain colored devicon"></i>
+                <p>Ruby</p>
+                <i class="devicon-python-plain colored devicon"></i>
+                <p>Python</p>
+              </div>
+
+              <div>
+                <i class="devicon-postgresql-plain colored devicon"></i>
+                <p>PostgreSQL</p>
+                <i class="devicon-mysql-plain colored devicon"></i>
+                <p>SQL</p>
+              </div>
+
+              <div>
+                <i class="devicon-nodejs-plain colored devicon"></i>
+                <p>Node.js</p>
+                <i class="devicon-mongodb-plain colored devicon"></i>
+                <p>MongoDB</p>
+              </div>
+
+              <div>
+                <i class="devicon-angularjs-plain colored devicon"></i>
+                <p>AngularJS</p>
+                <i class="devicon-rails-plain colored devicon"></i>
+                <p>Ruby on Rails</p>
+              </div>
+
+              <div>
+                <i class="devicon-git-plain colored devicon"></i>
+                <p>Git</p>
+                <i style="color:white" class="devicon-github-plain devicon"></i>
+                <p>GitHub</p>
+              </div>
+
+              <div>
+                <i class="devicon-bootstrap-plain colored devicon"></i>
+                <p>Bootstrap</p>
+                <i class="devicon-sass-original colored devicon"></i>
+                <p>Sass</p>
+              </div>
+
+              <div>
+                <i class="devicon-heroku-original colored devicon"></i>
+                <p>Heroku</p>
+                <i class="devicon-photoshop-plain colored devicon"></i>
+                <p>Adobe Photoshop</p>
+              </div>
+            </div> <!-- end scroll -->
+            <br>
+            <div class="section-divider"></div>
+
+          </div>
 
         <!-- PROJECTS -->
         <div class="pure-u-1"> <!-- TOOK OUT pure-u-lg-3-5  -->
@@ -375,134 +471,9 @@
             <li>Carl W. Garbe Award for Academic Excellence (German Studies)</li>
           </ul>
           <p>Activities: German Club Secretary/Graphic Designer, UC Davis Judo Team, Delta Phi Alpha German Honor Society, Music Appreciation Club Secretary</p>
+          <br>
         </div>
         <div class="pure-u-1 content section-divider"></div>
-        </div>
-
-        <!-- TECHNOLOGIES -->
-        <div class="l-box">
-          <h2 class="content-head is-center">
-            <i class="fa fa-cubes section-icon" aria-hidden="true"></i>
-            <br>
-            TECHNOLOGIES &amp; OTHER TOYS
-          </h2>
-          <br>
-          <div class="content is-center">
-
-            <div class="pure-g">
-              <!-- HTML -->
-              <div class="pure-u-1-5">
-                <i class="devicon-html5-plain colored devicon"></i>
-                <p>HTML</p>
-              </div>
-              <!-- CSS -->
-              <div class="pure-u-1-5">
-                <i class="devicon-css3-plain colored devicon"></i>
-                <p>CSS</p>
-              </div>
-              <!-- SASS -->
-              <div class="pure-u-1-5">
-                <i class="devicon-sass-original colored devicon"></i>
-                <p>Sass</p>
-              </div>
-              <!-- JAVASCRIPT -->
-              <div class="pure-u-1-5">
-                <i class="devicon-javascript-plain colored devicon"></i>
-                <p>JavaScript</p>
-              </div>
-              <!-- JQUERY -->
-              <div class="pure-u-1-5">
-                <i class="devicon-jquery-plain colored devicon"></i>
-                <p>jQuery</p>
-              </div>
-            </div>
-            <br>
-            <div class="pure-g">
-              <!-- RUBY -->
-              <div class="pure-u-1-5">
-                <i class="devicon-ruby-plain colored devicon"></i>
-                <p>Ruby</p>
-              </div>
-              <!-- PYTHON -->
-              <div class="pure-u-1-5">
-                <i class="devicon-python-plain colored devicon"></i>
-                <p>Python</p>
-              </div>
-              <!-- POSTGRESQL -->
-              <div class="pure-u-1-5">
-                <i class="devicon-postgresql-plain colored devicon"></i>
-                <p>PostgreSQL</p>
-              </div>
-              <!-- SQL -->
-              <div class="pure-u-1-5">
-                <i class="devicon-mysql-plain colored devicon"></i>
-                <p>SQL</p>
-              </div>
-              <!-- MONGODB -->
-              <div class="pure-u-1-5">
-                <i class="devicon-mongodb-plain colored devicon"></i>
-                <p>MongoDB</p>
-              </div>
-            </div>
-            <br>
-            <div class="pure-g">
-              <!-- ANGULAR -->
-              <div class="pure-u-1-5">
-                <i class="devicon-angularjs-plain colored devicon"></i>
-                <p>AngularJS</p>
-              </div>
-              <!-- NODE -->
-              <div class="pure-u-1-5">
-                <i class="devicon-nodejs-plain colored devicon"></i>
-                <p>Node.js</p>
-              </div>
-              <!-- RAILS -->
-              <div class="pure-u-1-5">
-                <i class="devicon-rails-plain colored devicon"></i>
-                <p>Ruby on Rails</p>
-              </div>
-              <!-- GIT -->
-              <div class="pure-u-1-5">
-                <i class="devicon-git-plain colored devicon"></i>
-                <p>Git</p>
-              </div>
-              <!-- GITHUB -->
-              <div class="pure-u-1-5">
-                <i style="color:white" class="devicon-github-plain devicon"></i>
-                <p>GitHub</p>
-              </div>
-            </div>
-            <br>
-            <div class="pure-g">
-              <!-- BOOTSTRAP -->
-              <div class="pure-u-1-5">
-                <i class="devicon-bootstrap-plain colored devicon"></i>
-                <p>Bootstrap</p>
-              </div>
-              <!-- BOWER -->
-              <div class="pure-u-1-5">
-                <i class="devicon-bower-line colored devicon"></i>
-                <p>Bower</p>
-              </div>
-              <!-- HEROKU -->
-              <div class="pure-u-1-5">
-                <i class="devicon-heroku-original colored devicon"></i>
-                <p>Heroku</p>
-              </div>
-              <!-- PHOTOSHOP -->
-              <div class="pure-u-1-5">
-                <i class="devicon-photoshop-plain colored devicon"></i>
-                <p>Adobe Photoshop</p>
-              </div>
-              <!-- TRELLO -->
-              <div class="pure-u-1-5">
-                <i class="devicon-trello-plain colored devicon"></i>
-                <p>Trello</p>
-              </div>
-            </div>
-            <br>
-          </div>
-          <div class="pure-u-1 content section-divider"></div>
         </div>
 
       </div>
@@ -515,12 +486,13 @@
       <a name="contact"></a>
         <h2 class="content-head is-center">
           <br>
-          <span style="color:#1ef2f6">Freelance, contract, or full-time opportunities? Let's talk.</span>
+          <div style="color:#1ef2f6">Freelance, contract, or full-time opportunities? Let's talk.</div>
           </h2>
           <br>
           <a class="email-button center-block is-center" href= "mailto:nataliam.hess@gmail.com">
             <i id="envelope" class="fa fa-envelope"></i><br>
             <span id="send-email">Send Email</span>
+            <span id="email-address">NataliaM.Hess@gmail.com</span>
           </a>
 
         <div class="pure-g">
