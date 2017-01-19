@@ -241,7 +241,7 @@ textarea {
 }
 
 #real-name {
-  font-size: 7em;
+  font-size: 7vw;
   font-weight: 900;
   -webkit-animation-duration: 2s;
   /*-webkit-animation-delay: 1s;*/
