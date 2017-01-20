@@ -113,3 +113,33 @@ responsive: [
 });
 
 });
+
+// NAV SCROLL TO SECTION
+
+$(document).ready(function() {
+
+  $("#about").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#about-section").offset().top},
+          'slow');
+  });
+
+  $("#projects").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#projects-section").offset().top},
+          'slow');
+  });
+
+  $("#experience").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#experience-section").offset().top},
+          'slow');
+  });
+
+  $("#contact").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#contact-section").offset().top
+        },'slow');
+  });
+
+});
