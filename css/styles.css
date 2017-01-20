@@ -1,3 +1,7 @@
+.pure-menu-link:hover {
+  color: #0ce695 !important;
+}
+
 .devicon {
   font-size: 2em;
 }

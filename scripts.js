@@ -112,10 +112,4 @@ responsive: [
 ]
 });
 
-// responsive menu
-
-// $('#nh').on('click', function(){
-//   $('.pure-menu-list-responsive').toggle("show");
-// });
-
 });
