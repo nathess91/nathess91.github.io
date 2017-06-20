@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "animate.css": "^3.5.2",
-    "devicon": "^2.0.0"
+    "devicon": "^2.0.0",
+    "parallax-js": "git+https://github.com/wagerfield/parallax.git",
+    "tilt.js": "^1.1.21"
   },
   "devDependencies": {},
   "scripts": {
