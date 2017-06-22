@@ -44,7 +44,6 @@ function moveChomp() {
 }
 
 $(document).ready(function() {
-  // tide();
   animateChomp();
   setInterval(function() {
     animateChomp();
