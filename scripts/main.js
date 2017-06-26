@@ -48,6 +48,6 @@ $(document).ready(function() {
   setInterval(function() {
     animateChomp();
   }, 24000);
-  moveChomp();
+  // moveChomp();
   console.log("I'm under construction! Keep checking back!")
 });

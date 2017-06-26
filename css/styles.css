@@ -1,14 +1,19 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
   background-color: #F4F4F4;
 }
 
 .flip-chomp {
   -moz-transform: scaleX(-1);
-   -o-transform: scaleX(-1);
-   -webkit-transform: scaleX(-1);
-   transform: scaleX(-1);
-   filter: FlipH;
-   -ms-filter: "FlipH";
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 #back-wave {
@@ -27,4 +32,10 @@ body {
   animation-duration: 2s;
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
+}
+
+@media screen and (max-width: 768px) {
+  #name-title {
+    width: 75%;
+  }
 }
