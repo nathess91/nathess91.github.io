@@ -1,10 +1,61 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
   background-color: #F4F4F4;
+  font-family: "Futura",Helvetica,Arial,sans-serif !important;
+  letter-spacing: 0.5px !important;
+  color: #0E0B16 !important;
+}
+
+.nav a {
+  padding: 25px !important;
+  color: #0E0B16 !important;
+}
+
+.nav,li,a:hover,a:focus {
+  background: none !important;
+  cursor: pointer;
+}
+
+a,a:visited,a:hover,a:active {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+	position: relative;
+  transition: 0.5s color ease;
+	text-decoration: none;
+}
+a:hover {
+	color: #C40C3E !important;
+}
+a.link:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position:absolute;
+}
+a.link:after {
+  bottom: 0.75em;
+}
+a.link:after {
+  height: 5px;
+  height: 0.35rem;
+  width: 0;
+  background: #C40C3E;
+}
+
+a.link:after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+a.link:hover:after {
+  width: 65%;
 }
 
 .flip-chomp {
