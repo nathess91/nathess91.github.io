@@ -4,15 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="Natalia Natawls Hess Portfolio" content="Dive into projects and other works by Natalia Hess">
-    <!-- link preview image here -->
-    <meta property="og:image" content="" />
-    <!-- favicon here -->
+    <meta property="og:image" content="images/link-preview-image.png" />
     <link rel="icon" type="image/png" href="images/firedrop-favicon.png">
     <title>Natalia "Natawls" Hess | Developer</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/devicon.css">
+    <link rel="stylesheet" href="css/devicon-colors.css">
   </head>
+  <style>
+    html, body {
+      overflow-y: hidden;
+    }
+  </style>
   <body>
     <nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
@@ -20,29 +26,70 @@
           <li><a href="http://natawls.tech" style="padding-left:10px!important"><img src="images/firedrop-favicon.png" alt="Natalia Hess Firedrop" width="10%"></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="views/about.html" class="link">ABOUT</a></li>
-          <li><a href="views/projects.html" class="link">PROJECTS</a></li>
-          <li><a href="Natalia_Hess_Resume.pdf" target="_blank" class="link">RESUME</a></li>
-          <li><a class="link">CONTACT</a></li>
+          <li><a href="#" class="link">ABOUT</a></li>
+          <li><a href="projects.html" class="link">PROJECTS</a></li>
+          <li><a href="views/Natalia_Hess_Resume.pdf" target="_blank" class="link">RESUME</a></li>
+          <li><a data-toggle="modal" data-target="#contact-modal" class="link">CONTACT</a></li>
         </ul>
       </div>
     </nav>
 
-
-        <img data-tilt src="images/main_header.png" id="name-title" class="center-block" alt="Natalia Natawls Hess Full Stack Web Developer" width="25%" style="margin-top:100px">
-
-        <div>
-            <img src="images/back_wave.png" id="back-wave" width="100%" style="position:absolute;bottom:0" class="animated infinite pulse">
-            <img src="images/Chomp.png" id="chomp" class="img-responsive" alt="Chomp the Shark" style="position:absolute;top:600px;left:0px" width="8%">
-            <img src="images/middle_wave.png" id="middle-wave" width="100%" style="position:absolute;bottom:0" class="animated infinite pulse">
-            <img src="images/front_wave.png" id="front-wave" width="100%" style="position:absolute;bottom:0" class="animated infinite pulse">
+    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="border-bottom:none;">
+            <button type="button" class="close open-sans-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="red">YOU'RE GONNA NEED A BIGGER BOAT</h4>
+            <p class="open-sans-light left-border" style="margin-top:25px">Want to hire a charming lady engineer with just the right amount of swagger? Let's chat! I'm always hungry for new and exciting projects.</p>
+            <br>
+            <ul class="contact-list open-sans-light">
+              <li>
+                <i style="color:#d54937" class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
+                <a href="mailto:nataliam.hess@gmail.com">nataliam.hess@gmail.com</a>
+              </li>
+              <li>
+                <i style="color:#0077b5" class="fa fa-linkedin-square fa-fw" aria-hidden="true"></i>
+                <a href="https://linkedin.com/in/nataliahess" target="_blank">linkedin.com/in/nataliahess</a>
+              </li>
+              <li>
+                <i class="fa fa-github fa-fw" aria-hidden="true"></i>
+                <a href="https://github.com/nathess91" target="_blank">github.com/nathess91</a>
+              </li>
+              <li>
+                <i style="color:#02b875" class="fa fa-medium fa-fw" aria-hidden="true"></i>
+                <a href="https://medium.com/@natawls" target="_blank">medium.com/@natawls</a>
+              </li>
+              <li>
+                <i style="color:#1da1f2" class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+                <a href="https://twitter.com/natawls" target="_blank">twitter.com/natawls</a>
+              </li>
+              <li>
+                <i style="color:#1db954" class="fa fa-spotify fa-fw" aria-hidden="true"></i>
+                <a href="https://open.spotify.com/user/natawls" target="_blank"> spotify.com/user/natawls</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </div>
 
+    <div>
+      <img data-tilt src="images/main_header.png" id="name-title" class="center-block" alt="Natalia Natawls Hess Full Stack Web Developer" width="25%" style="margin-top:100px">
 
+      <div>
+          <img src="images/back_wave.png" id="back-wave" width="100%" style="position:absolute;bottom:0" class="animated infinite pulse">
+          <img src="images/Chomp.png" id="chomp" class="img-responsive" alt="Chomp the Shark" style="position:absolute;bottom:0;left:0px" width="8%">
+          <img src="images/middle_wave.png" id="middle-wave" width="100%" style="position:absolute;bottom:0" class="animated infinite pulse">
+          <img src="images/front_wave.png" id="front-wave" width="100%" style="position:absolute;bottom:0" class="animated infinite pulse">
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/tilt.jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/ad918cbf28.js"></script>
   </body>
 </html>
