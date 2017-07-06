@@ -198,10 +198,31 @@ a.link:hover:after,a.active:after {
   .mobile-display {
     display: block;
   }
+
   .desktop-display {
     display: none;
   }
+
   #name-title {
     width: 75%;
+  }
+
+  #chomp {
+    width: 80px;
+  }
+
+  #back-wave {
+    height: 200px;
+    width: 120vw;
+  }
+
+  #middle-wave {
+    height: 200px;
+    width: 120vw;
+  }
+
+  #front-wave {
+    height: 180px;
+    width: 120vw;
   }
 }
