@@ -44,6 +44,10 @@ a {
   display: block;
 }
 
+.screens {
+  float: right;
+}
+
 .devicon {
   padding-right: 10px;
 }
@@ -224,5 +228,18 @@ a.link:hover:after,a.active:after {
   #front-wave {
     height: 180px;
     width: 120vw;
+  }
+
+  .divider {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .screens {
+    float: none !important;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
   }
 }
