@@ -37,6 +37,13 @@ a {
   cursor: pointer;
 }
 
+.mobile-display {
+  display: none;
+}
+.desktop-display {
+  display: block;
+}
+
 .devicon {
   padding-right: 10px;
 }
@@ -188,6 +195,12 @@ a.link:hover:after,a.active:after {
 }
 
 @media screen and (max-width: 768px) {
+  .mobile-display {
+    display: block;
+  }
+  .desktop-display {
+    display: none;
+  }
   #name-title {
     width: 75%;
   }

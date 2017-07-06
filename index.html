@@ -20,17 +20,36 @@
     }
   </style>
   <body>
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top desktop-display">
       <div class="container-fluid">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="http://natawls.tech" style="padding-left:10px!important"><img src="images/firedrop-favicon.png" alt="Natalia Hess Firedrop" width="10%"></a></li>
-        </ul>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://natawls.tech" style="padding-left:20px!important"><img src="images/firedrop-favicon.png" alt="Natalia Hess Firedrop" title="Back to the Shark Tank" width="10%"></a>
+        </div>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#" class="link">ABOUT</a></li>
-          <li><a href="projects.html" class="link">PROJECTS</a></li>
+          <li><a href="projects.html" class="link active">PROJECTS</a></li>
           <li><a href="views/Natalia_Hess_Resume.pdf" target="_blank" class="link">RESUME</a></li>
           <li><a data-toggle="modal" data-target="#contact-modal" class="link">CONTACT</a></li>
         </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-fixed-top mobile-display">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="http://natawls.tech"><img src="images/firedrop-favicon.png" alt="Natalia Hess Firedrop" title="Back to the Shark Tank" width="18%" style="padding:20px"></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <small>MENU</small>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav text-center">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="views/Natalia_Hess_Resume.pdf" target="_blank">RESUME</a></li>
+            <li><a data-toggle="modal" data-target="#contact-modal">CONTACT</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
