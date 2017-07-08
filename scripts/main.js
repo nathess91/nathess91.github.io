@@ -10,6 +10,49 @@ function animateChomp() {
    $("#chomp").removeClass("flip-chomp");
 }
 
+function scrollTo() {
+  var gallery = {
+    "#aquis-click" : "#aquis-project",
+    "#dockit-click" : "#dockit-project",
+    "#popped-click" : "#popped-project",
+    "#swolemates-click" : "#swolemates-project",
+    "#paws-click" : "#paws-project",
+    "#fellowship-click" : "#fellowship-project",
+  };
+
+
+  $("#aquis-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#aquis-project").offset().top
+    }, "slow");
+  });
+  $("#dockit-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#dockit-project").offset().top
+    }, "slow");
+  });
+  $("#popped-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#popped-project").offset().top
+    }, "slow");
+  });
+  $("#swolemates-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#swolemates-project").offset().top
+    }, "slow");
+  });
+  $("#paws-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#paws-project").offset().top
+    }, "slow");
+  });
+  $("#fellowship-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#fellowship-project").offset().top
+    }, "slow");
+  });
+}
+
 function moveChomp() {
   window.onkeydown = function(e) {
     $(".animated").removeClass("infinite");
@@ -45,6 +88,7 @@ function moveChomp() {
 
 $(document).ready(function() {
   animateChomp();
+  scrollTo();
   setInterval(function() {
     animateChomp();
   }, 24000);
