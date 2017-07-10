@@ -279,4 +279,12 @@ a.link:hover:after,a.active:after {
   #aquis-project {
     padding-top: 200px;
   }
+  
+  body {
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
