@@ -258,10 +258,10 @@ a.link:hover:after,a.active:after {
   }
 
   #chomp {
-    width: 80px;
+    width: 20%;
   }
 
-  #back-wave {
+  /*#back-wave {
     height: 200px;
     width: 120vw;
   }
@@ -274,7 +274,7 @@ a.link:hover:after,a.active:after {
   #front-wave {
     height: 180px;
     width: 120vw;
-  }
+  }*/
 
   .divider {
     margin-top: 75px;
