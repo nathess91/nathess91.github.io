@@ -279,9 +279,4 @@ a.link:hover:after,a.active:after {
   #aquis-project {
     padding-top: 200px;
   }
-
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden !important;
-  }
 }
