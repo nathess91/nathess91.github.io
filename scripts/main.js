@@ -51,6 +51,33 @@ function scrollTo() {
       scrollTop: $("#fellowship-project").offset().top
     }, "slow");
   });
+  $("#wrap-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#wrap-project").offset().top
+    }, "slow");
+  });
+  $("#archive-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#archive-project").offset().top
+    }, "slow");
+  });
+  $("#octoboard-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#octoboard-project").offset().top
+    }, "slow");
+  });
+
+  $("#wrap-engineering-click").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#wrap-engineering").offset().top
+    }, "slow");
+  });
+
+  $("#wrap-learn").click(function() {
+    $("html,body").animate({
+      scrollTop: $("#wrap-project").offset().top
+    }, "slow");
+  });
 }
 
 function moveChomp() {

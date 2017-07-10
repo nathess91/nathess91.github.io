@@ -21,6 +21,11 @@ body {
 
 nav {
   background-color: #FFFFFF;
+  opacity: 0.97;
+}
+
+.navbar-brand {
+  padding: 20px 15px !important;
 }
 
 a {
@@ -204,22 +209,35 @@ a.link:hover:after,a.active:after {
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin-bottom: 25px;
 }
 
-.project-gallery-image:hover,.project-gallery-image.hovered {
+.project-gallery-image:hover,.project-gallery-image.hovered,#page-scroll-top:hover {
   cursor: pointer;
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  color: #C40C3E !important;
+}
+
+#page-scroll-top {
+  position: fixed;
+  z-index: 9999;
+  margin-left: 25px;
+  bottom: 25px;
+  display: none;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 768px) {
   .mobile-display {
-    display: block;
+    display: block !important;
   }
 
   .desktop-display {
-    display: none;
+    display: none !important;
   }
 
   #name-title {
@@ -256,5 +274,9 @@ a.link:hover:after,a.active:after {
     margin-right: auto;
     margin-left: auto;
     margin-top: 25px;
+  }
+
+  #aquis-project {
+    padding-top: 200px;
   }
 }
