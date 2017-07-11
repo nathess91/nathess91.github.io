@@ -294,9 +294,13 @@ a.link:hover:after,a.active:after {
   }
 
   .modal-body {
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: 15px;
     margin-bottom: 50px;
+  }
+
+  .fa-fw {
+    margin-right: 10px;
   }
 
   .profile-picture {
@@ -306,5 +310,9 @@ a.link:hover:after,a.active:after {
     margin-right: auto;
     width: 100%;
     margin-bottom: 50px;
+  }
+
+  .contact-list {
+    padding-left: 0;
   }
 }
