@@ -119,6 +119,5 @@ $(document).ready(function() {
   setInterval(function() {
     animateChomp();
   }, 24000);
-  // moveChomp();
-  console.log("I'm under construction! Keep checking back!")
+  console.log("There's always money in the banana stand.")
 });
