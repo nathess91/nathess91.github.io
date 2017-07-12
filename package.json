@@ -9,7 +9,9 @@
     "parallax-js": "git+https://github.com/wagerfield/parallax.git",
     "tilt.js": "^1.1.21"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
