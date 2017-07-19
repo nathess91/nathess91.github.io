@@ -315,4 +315,8 @@ a.link:hover:after,a.active:after {
   .contact-list {
     padding-left: 0;
   }
+
+  nav {
+    opacity: 100;
+  }
 }
